@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LEOPicBrowserCollectionViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PicBrowserCollectionViewCell" reuseIdentifier="PicBrowserCollectionViewCell" id="gTV-IL-0wX" customClass="LEOPicBrowserCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vh0-SY-4Bd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    </imageView>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4R-5t-xmD" customClass="LEOZoomingScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </scrollView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_picset_gradient_down" translatesAutoresizingMaskIntoConstraints="NO" id="nJd-E6-Y47">
+                        <rect key="frame" x="0.0" y="328" width="320" height="240"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="240" id="FON-75-tNx"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grr-KP-zKE" customClass="LEOPicTitleView">
+                        <rect key="frame" x="0.0" y="392" width="320" height="140"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KF1-m2-xnd">
+                                <rect key="frame" x="8" y="0.0" width="254" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7SX-QP-ulG"/>
+                                    <constraint firstAttribute="width" constant="271" id="V76-aT-efe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V76-aT-efe"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m32-4Z-T0P">
+                                <rect key="frame" x="8" y="21" width="304" height="119"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="DrI-im-Bw9"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="9"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kan-bT-V7E">
+                                <rect key="frame" x="270" y="0.0" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Bjs-GJ-scb"/>
+                                    <constraint firstAttribute="width" constant="42" id="BmA-89-F6u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kan-bT-V7E" firstAttribute="leading" secondItem="KF1-m2-xnd" secondAttribute="trailing" constant="8" id="26z-pB-cuv"/>
+                            <constraint firstAttribute="height" constant="140" id="7Vs-b3-5PK"/>
+                            <constraint firstAttribute="trailing" secondItem="m32-4Z-T0P" secondAttribute="trailing" constant="8" id="Fgz-yT-v5r"/>
+                            <constraint firstAttribute="trailing" secondItem="kan-bT-V7E" secondAttribute="trailing" constant="8" id="J00-sB-h2l"/>
+                            <constraint firstItem="KF1-m2-xnd" firstAttribute="top" secondItem="grr-KP-zKE" secondAttribute="top" id="MRA-DZ-IQC"/>
+                            <constraint firstItem="KF1-m2-xnd" firstAttribute="leading" secondItem="grr-KP-zKE" secondAttribute="leading" constant="8" id="OHg-yB-biB"/>
+                            <constraint firstItem="m32-4Z-T0P" firstAttribute="leading" secondItem="grr-KP-zKE" secondAttribute="leading" constant="8" id="aqN-sq-tdw"/>
+                            <constraint firstAttribute="bottom" secondItem="m32-4Z-T0P" secondAttribute="bottom" id="kdl-lh-exG"/>
+                            <constraint firstItem="kan-bT-V7E" firstAttribute="top" secondItem="grr-KP-zKE" secondAttribute="top" id="zKO-Vn-UGw"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="contentTextView" destination="m32-4Z-T0P" id="ge4-DB-9I3"/>
+                            <outlet property="pageLabel" destination="kan-bT-V7E" id="CRd-zC-4Bn"/>
+                            <outlet property="titleLabel" destination="KF1-m2-xnd" id="unz-v0-QMD"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vh0-SY-4Bd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4MP-un-i57"/>
+                <constraint firstAttribute="bottom" secondItem="grr-KP-zKE" secondAttribute="bottom" constant="36" id="ABg-Gm-ahB"/>
+                <constraint firstAttribute="bottom" secondItem="nJd-E6-Y47" secondAttribute="bottom" id="BjY-1g-0fh"/>
+                <constraint firstItem="vh0-SY-4Bd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cib-bH-jTE"/>
+                <constraint firstItem="k4R-5t-xmD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JYX-yV-ob2"/>
+                <constraint firstItem="grr-KP-zKE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="L5v-4w-352"/>
+                <constraint firstItem="k4R-5t-xmD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RoC-9s-gJs"/>
+                <constraint firstItem="nJd-E6-Y47" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UP0-Bm-u3i"/>
+                <constraint firstAttribute="bottom" secondItem="k4R-5t-xmD" secondAttribute="bottom" id="ZMS-ev-mV6"/>
+                <constraint firstAttribute="bottom" secondItem="k4R-5t-xmD" secondAttribute="bottom" id="ddk-2w-uNk"/>
+                <constraint firstItem="k4R-5t-xmD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lsX-fd-MWH"/>
+                <constraint firstAttribute="trailing" secondItem="k4R-5t-xmD" secondAttribute="trailing" id="mMN-YL-6z1"/>
+                <constraint firstAttribute="trailing" secondItem="nJd-E6-Y47" secondAttribute="trailing" id="p8E-zI-LAD"/>
+                <constraint firstAttribute="trailing" secondItem="vh0-SY-4Bd" secondAttribute="trailing" id="sIN-tb-uu3"/>
+                <constraint firstAttribute="bottom" secondItem="vh0-SY-4Bd" secondAttribute="bottom" id="wTJ-yU-cQH"/>
+                <constraint firstAttribute="trailing" secondItem="grr-KP-zKE" secondAttribute="trailing" id="wpE-2z-Dh4"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ZMS-ev-mV6"/>
+                    <exclude reference="lsX-fd-MWH"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backgroundImgV" destination="vh0-SY-4Bd" id="Ewa-jS-7NQ"/>
+                <outlet property="picTitleView" destination="grr-KP-zKE" id="luo-nB-E5g"/>
+                <outlet property="zoomingScrollView" destination="k4R-5t-xmD" id="fWF-CP-tSl"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_picset_gradient_down" width="375" height="147"/>
+    </resources>
+</document>
